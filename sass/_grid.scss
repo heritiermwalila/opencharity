@@ -4,7 +4,6 @@ $row:1080px;
     width: 100%;
     max-width: $row;
     margin: 0 auto;
-    padding: 12px;
     @include clearfix;
     &:not(:last-child){
         margin-bottom: $vertical-gutter;
