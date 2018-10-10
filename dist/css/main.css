@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'firstfont';
+  src: url(/dist/Fonts/MuseoSans-300.otf), url(/dist/Fonts/MuseoSans_500.otf), url(/dist/Fonts/MuseoSans_700.otf);
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'secondfont';
+  src: url(/dist/Fonts/OpenSans-CondLight.ttf), url(/dist/Fonts/OpenSans-Bold.ttf), url(/dist/Fonts/OpenSans-ExtraBold.ttf);
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'firstfont'; }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1;
+  font-family: 'secondfont';
+  color: #565659;
+  height: 100vh; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.sec-row {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px; }
+  .sec-row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .sec-row:not(:last-child) {
+    margin-bottom: 2rem; }
+  .sec-row [class^="col-"] {
+    float: left; }
+    .sec-row [class^="col-"]:not(:last-child) {
+      margin-right: 3rem; }
+  .sec-row .col-half {
+    width: calc((100% - 3rem) / 2); }
+  .sec-row .col-third {
+    width: calc((100% - 2 * 3rem) / 3); }
+  .sec-row .col-third-one {
+    width: calc(((100% - 2 * 3rem) / 3)); }
+  .sec-row .col-third-two {
+    width: calc(2 * ((100% - 2 * 3rem) / 3) + 3rem); }
+  .sec-row .col-four-one {
+    width: calc(((100% - 3 * 3rem) / 4)); }
+  .sec-row .col-four-two {
+    width: calc(2 * ((100% - 3 * 3rem) / 4) + 3rem); }
+  .sec-row .col-four-tree {
+    width: calc(3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); }
+
+#nav-menu-container {
+  position: relative;
+  overflow: hidden; }
+  #nav-menu-container .nav-menu {
+    display: flex;
+    padding: 18px; }
+    #nav-menu-container .nav-menu li {
+      margin-right: 1.5rem; }
+      #nav-menu-container .nav-menu li a {
+        text-decoration: none;
+        font-family: 'firstfont';
+        text-transform: uppercase;
+        color: #565659;
+        font-size: 15px;
+        font-weight: 600; }
+        #nav-menu-container .nav-menu li a.join-us {
+          border: 2px solid #5BC0C3;
+          padding: 10px 20px;
+          border-radius: 5px; }
+
+#logo-container {
+  padding-top: 10px; }
+  #logo-container img {
+    width: 33%; }
+
+#header--sharing-idea {
+  width: 100%;
+  height: 70vh;
+  background: url(/dist/images/hero.jpg) no-repeat;
+  background-size: cover; }

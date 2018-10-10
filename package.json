@@ -1,0 +1,22 @@
+{
+  "name": "opencharity",
+  "version": "1.0.0",
+  "description": "Html and css mockup form opencharity website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/main.scss -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heritiermwalila/opencharity.git"
+  },
+  "author": "Heritier Mwalila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heritiermwalila/opencharity/issues"
+  },
+  "homepage": "https://github.com/heritiermwalila/opencharity#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

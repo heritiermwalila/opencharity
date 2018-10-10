@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'typography';
+@import 'reset';
+@import 'mixins';
+@import 'grid';
+
+
+#nav-menu-container{
+    position: relative;
+    overflow: hidden;
+    .nav-menu{
+        display: flex;
+        padding: 18px;
+
+        li{
+            margin-right: 1.5rem;
+            a{
+                text-decoration: none;
+                font-family: 'firstfont';
+                text-transform: uppercase;
+                color: $content-color;
+                font-size: 15px;
+                font-weight: 600;
+
+                &.join-us{
+                    border: 2px solid $primary-color;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                }
+                
+            }
+
+            
+        }
+    }
+
+    
+}
+
+#logo-container{
+        
+    padding-top: 10px; 
+
+    img{
+        width: 33%;
+    }
+}
+
+#header--sharing-idea{
+    width: 100%;
+    height: 70vh;
+    background: url(/dist/images/hero.jpg) no-repeat;
+    background-size: cover;
+}

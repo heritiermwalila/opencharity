@@ -1,0 +1,53 @@
+$row:1080px;
+
+.sec-row{
+    width: 100%;
+    max-width: $row;
+    margin: 0 auto;
+    padding: 12px;
+    @include clearfix;
+    &:not(:last-child){
+        margin-bottom: $vertical-gutter;
+    }
+
+    [class^="col-"]{
+        float: left;
+        &:not(:last-child){
+            margin-right: $horizontal-gutter;
+        }
+    }
+
+
+    .col-half{
+        width: calc((100% - #{$horizontal-gutter}) / 2 );
+        
+    }
+
+    .col-third{
+        width: calc((100% - 2 * #{$horizontal-gutter}) / 3);
+        
+    }
+    .col-third-one{
+        width: calc(((100% - 2 * #{$horizontal-gutter}) / 3));
+        
+    }
+    .col-third-two{
+        width: calc(2 * ((100% - 2 * #{$horizontal-gutter}) / 3) + #{$horizontal-gutter});
+        
+    }
+    .col-four-one{
+        width: calc(((100% - 3 * #{$horizontal-gutter}) / 4));
+        
+    }
+
+    .col-four-two{
+        width:calc(2 * ((100% - 3 * #{$horizontal-gutter}) / 4) + #{$horizontal-gutter});
+        
+    }
+    .col-four-tree{
+        width:calc(3 * ((100% - 3 * #{$horizontal-gutter}) / 4) + 2 * #{$horizontal-gutter} );
+        
+    }
+
+    
+}

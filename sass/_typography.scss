@@ -1,0 +1,15 @@
+@font-face{
+    font-family: 'firstfont';
+    src:$font-light, $font-regular, $font-bold;
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: 'secondfont';
+    src:$secondary-font-light, $secondary-font-bold, $secondary-font-extra-bold;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'firstfont';
+}
