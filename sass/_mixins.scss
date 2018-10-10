@@ -6,3 +6,11 @@
         
     }
 }
+
+@mixin button{
+    text-decoration: none;
+    font-family: 'firstfont';
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}

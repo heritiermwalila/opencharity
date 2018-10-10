@@ -33,7 +33,7 @@ time, mark, audio, video {
 
 body {
   line-height: 1;
-  font-family: 'secondfont';
+  font-family: 'firstfont';
   color: #565659;
   height: 100vh; }
 
@@ -136,13 +136,13 @@ input, select {
         text-decoration: none;
         font-family: 'firstfont';
         text-transform: uppercase;
-        color: #565659;
         font-size: 15px;
-        font-weight: 600; }
+        font-weight: 600;
+        color: #565659; }
         #nav-menu-container .nav-menu li a.join-us {
           border: 2px solid #5BC0C3;
-          padding: 10px 20px;
-          border-radius: 5px; }
+          border-radius: 5px;
+          padding: 10px 20px; }
 
 #logo-container {
   padding-top: 10px; }
@@ -182,3 +182,24 @@ input, select {
         font-size: 15px; }
     #header--sharing-idea .sec-row .header-content h4 {
       font-size: 20px; }
+
+.btn {
+  text-decoration: none;
+  font-family: 'firstfont';
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #5BC0C3;
+  padding: 10px 20px; }
+
+#next-event {
+  padding: 40px 0;
+  background: #f1f1f1; }
+  #next-event .col-third-one {
+    text-align: center; }
+  #next-event .col-third-two .secondary-item {
+    color: #5BC0C3; }
+  #next-event .col-third-two p {
+    font-size: 14px;
+    line-height: 35px; }

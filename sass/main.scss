@@ -15,17 +15,17 @@
         li{
             margin-right: 1.5rem;
             a{
-                text-decoration: none;
-                font-family: 'firstfont';
-                text-transform: uppercase;
+                
+                @include button;
+                
                 color: $content-color;
-                font-size: 15px;
-                font-weight: 600;
+                
+                
 
                 &.join-us{
                     border: 2px solid $primary-color;
-                    padding: 10px 20px;
                     border-radius: 5px;
+                    padding: 10px 20px;
                 }
                 
             }
@@ -92,5 +92,28 @@
             }
         }
 
+    }
+}
+
+.btn{
+    @include button;
+    color: #fff;
+    background: $primary-color;
+    padding: 10px 20px;
+}
+#next-event{
+    padding: 40px 0;
+    background: #f1f1f1;
+    .col-third-one{
+        text-align: center;
+    }
+    .col-third-two{
+        .secondary-item{
+            color: $primary-color;
+        }
+        p{
+            font-size: 14px;
+            line-height: 35px;
+        }
     }
 }
