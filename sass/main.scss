@@ -98,8 +98,23 @@
 .btn{
     @include button;
     color: #fff;
-    background: $primary-color;
+    background: transparent;
     padding: 10px 20px;
+}
+
+.btn-one{
+    border:2px solid $primary-color;
+    background: #fff;
+    color: $content-color;
+}
+.btn-first{
+    
+    background: $primary-color;
+    color: #fff;
+}
+
+.mt-10{
+    margin-top: 10px;
 }
 #next-event{
     padding: 40px 0;
@@ -114,6 +129,129 @@
         p{
             font-size: 14px;
             line-height: 35px;
+        }
+    }
+}
+
+#get-involved{
+    padding: 25px 0;
+    .sec-row{
+        text-align: center;
+        h2{
+            @include uppersmall;
+        }
+
+        .col-third-one{
+            text-align: center;
+            line-break: auto;
+            line-height: 25px;
+
+            img{
+                height: 100px;
+            }
+            h4{
+                text-transform: uppercase;
+                font-size: 18px;
+                padding-top: 28px;
+            }
+            p{
+                padding: 5px 0 20px 0;
+            } 
+            a{
+                display: block;
+                border: 1px solid #5BC0C3;
+                width: 55%;
+                margin: auto;
+                padding: 5px 0;
+            }   
+              
+        }
+    }
+}
+
+#our-mission{
+    background: #F1F2F5;
+    padding: 20px 0 40px 0;
+
+    .sec-row:last-child{
+        margin-top: 2rem;
+        padding: 3rem 0 ;
+        border-bottom: 1px solid #cecece;
+    }
+
+    .our-mission--content{
+        text-align: center;
+        line-height: 2.7;
+
+        h2{
+            @include uppersmall;
+        }
+
+    }
+
+    .mission{
+        text-align: center;
+        line-height: 1.4;
+        background: #fff;
+        border-radius: 5px;
+        position: relative;
+
+        &--image-container{
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 30%;
+            background: #fff;
+            height: 75px;
+            transform: translateX(-50%);
+            border-radius: 100%;
+            padding: 10px 0;
+            margin-top: -50px;
+
+            img{
+                height: 100%;
+            }
+        }
+        &--content{
+            padding: 52px 0 32px 0;
+
+            h3{
+                padding: 10px;
+                font-size: 18px;
+                color: $primary-color;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+#our-member{
+    background: #F1F2F5;
+    padding: 2rem 0;
+
+    .member{
+        text-align: center;
+        &--title{
+            @include uppersmall;
+        }
+
+        &--logo-wrapper{
+            @include grid-5-col;
+            margin-top: 30px;
+
+            div{
+                img{
+                    width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                    height: 100%;
+
+                    &.fit{
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                }
+            }
         }
     }
 }

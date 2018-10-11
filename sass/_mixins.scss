@@ -14,3 +14,16 @@
     font-size: 15px;
     font-weight: 600;
 }
+
+@mixin uppersmall{
+    text-transform: uppercase;
+    font-size: $font-header/2;
+}
+
+@mixin grid-5-col {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    grid-gap: 5rem;
+    position: relative;
+    align-items: center;
+}
