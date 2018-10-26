@@ -25,6 +25,7 @@ body {
     font-family:'firstfont';
     color:$content-color;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 article,aside,details,figcaption,figure,
@@ -52,6 +53,7 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    color: $primary-color;
 }
 
 /* change colours to suit your needs */

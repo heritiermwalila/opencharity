@@ -1,0 +1,159 @@
+//phone with max-width of 768px
+
+@include media-small{
+    .site-container{
+        overflow-x: hidden;
+        .sec-row{
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            
+            &:not(:last-child){
+                margin-bottom: $vertical-gutter;
+            }
+        
+            [class^="col-"]{
+                float: none;
+                &:not(:last-child){
+                    margin-right: $horizontal-gutter;
+                }
+            }
+        
+        
+            .col-half,
+            .col-third,
+            .col-third-one,
+            .col-third-two,
+            .col-four-one,
+            .col-four-two,
+            .col-four-tree{
+                width: 100%;
+                
+            }
+        
+            
+        }
+
+        #nav-menu-container{
+            display: none;
+        }
+        #nav-menu-mobile{
+            display: block;
+        }
+
+        #header--sharing-idea {
+            .sec-row{
+                .header-content{
+
+                    h1{
+                        font-size: 1.5rem;
+                        word-spacing: 1px;
+                    }
+                    p{
+                        width: 90%;
+                    }
+
+                }
+            }
+            
+        }
+        #next-event{
+
+            .sec-row{
+
+                .col-third{
+                   
+
+                    &-two{
+                        text-align: center;
+                        p{
+                            line-height: normal;
+                            margin-bottom: 25px;
+                        }
+                    }
+                    
+                    &-one{
+                        
+                        
+                    }
+
+                }
+                
+                
+            }
+
+        }
+
+        #our-member{
+            padding: 0;
+    
+            .member--logo-wrapper{
+                grid-template-columns: repeat(5, minmax(114px, 1fr));
+                grid-gap: 3rem;
+                padding: 0 20px;
+            }
+
+            
+
+            
+    
+        } 
+
+        #our-mission{
+
+            .sec-row{
+                
+
+                .our-mission--content{
+
+                    p{
+                        line-height: normal;
+                    }
+                    h4{
+                        line-height: normal;
+                    }
+                
+                }
+    
+            
+            }
+        }
+
+        #blog{
+
+            .sec-row{
+                padding: 3rem 0rem;
+                max-width: 768px;
+                text-align: center;
+
+                .blog-item-container{
+                   
+                    overflow: hidden;
+                }
+            }
+
+            .blog--right-arrow,
+            .blog--left-arrow{
+                display: none;
+            }
+
+        } 
+
+        
+
+
+    }
+
+    
+        
+
+    
+    .sec-row{
+        .col-third{
+            &-one:not(:last-child){
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    
+}

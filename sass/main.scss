@@ -3,8 +3,11 @@
 @import 'reset';
 @import 'mixins';
 @import 'grid';
+@import 'media';
 
-
+header{
+    padding: 15px 0;
+}
 #nav-menu-container{
     position: relative;
     overflow: hidden;
@@ -163,6 +166,7 @@
                 width: 55%;
                 margin: auto;
                 padding: 5px 0;
+                color: $primary-color;
             }   
               
         }
@@ -210,6 +214,8 @@
 
             img{
                 height: 100%;
+                object-fit: scale-down;
+                width: 77%;
             }
         }
         &--content{
@@ -222,6 +228,8 @@
                 font-weight: 500;
             }
         }
+
+        
     }
 }
 
@@ -253,5 +261,195 @@
                 }
             }
         }
+
+        &--dot{
+            position: relative;
+            span{
+                width: 10px;
+                height: 10px;
+                background: #fff;
+                display: inline-block;
+                border-radius: 100%;
+                margin: 5px;
+
+                &.active{
+                    background: $primary-color;
+                }
+            }
+        }
     }
+}
+
+#blog{
+    background: #F4F5F7;
+    position: relative;
+    &::before{
+        content: "";
+        background: #858688;
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        bottom: 0;
+    }
+
+    .blog{
+
+        &--left-arrow{
+        
+
+       
+            position: absolute;
+            top: 50%;
+            left: 0;
+            padding-left: 2rem;
+            span{
+                font-size: 2rem;
+                    color: $primary-color;
+            }
+    
+            
+        }
+        &--right-arrow{
+    
+          
+                position: absolute;
+                right: 0;
+                top: 50%;
+                padding-right: 2rem;
+
+                span{
+                    font-size: 2rem;
+                    color: $primary-color;
+                }
+          
+    
+        }
+
+    }
+
+    
+
+
+
+    .sec-row{
+        background: #fff;
+        padding:3rem 4rem;
+        max-width: $max-width-ext;
+        position: relative;
+
+        [class^="col-"]{
+            margin-top: 20px;
+
+            h6{
+                color: $primary-color;
+            }
+        }
+
+        hr{
+            border:0;
+            height: 1px;
+            background: #f1f1f1;
+        }
+
+        h2{
+            text-align: center;
+            @include uppersmall;
+            padding-bottom: 1rem;
+            
+        }
+    }
+}
+
+#footer-container{
+    background: #454850;
+    .footer{
+        text-align: center;
+        padding: 2rem 0;
+        
+        
+        &--social{
+            position: relative;
+            margin-bottom: 1rem;
+            border-bottom: 2px inset #555;
+            padding-bottom: 2rem;
+
+            ul{
+                li{
+                    display: inline-block;
+                    margin: 0 .5rem;
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        &--copyright{
+            color: #fff;
+            word-spacing: 2px;
+            font-size: 14px;
+        }
+    }
+}
+
+#page-nav{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 50%;
+    left: 0;
+
+    .block{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+
+        &--left{
+            left: 0;
+            transform: translateX(-70%);
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                transform: translateX(-45%);
+                img{
+                    left: 70%;
+                }
+            }
+
+            img{
+                position: inherit;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+            }
+            }
+        
+        &--right{
+           
+            right: 0;
+            transform: translateX(70%);
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                transform: translateX(45%);
+                img{
+                    right: 50%;
+                }
+            }
+            img{
+                position: inherit;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                right: 25%;
+            }
+            }
+
+    }
+
+    
+}
+
+#nav-menu-mobile{
+    display: none;
 }
